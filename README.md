@@ -10,7 +10,7 @@ Moreover, both Mamba and GCN are inherently designed to process **1D sequential 
 ## 🧠 Framework Overview
 
 <p align="center">
-  <img src="framework.png" width="700"/>
+  <img src="assets/framework.png" width="700"/>
 </p>
 
 <p align="center">
