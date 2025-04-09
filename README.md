@@ -7,6 +7,10 @@ This project explores the combination of **Mamba** and **Graph Convolutional Net
 
 Moreover, both Mamba and GCN are inherently designed to process **1D sequential data**, which enables image representation and reasoning without the need for excessive 2D unfolding or complex restructuring. This synergy not only simplifies the data pipeline but also improves model efficiency and interpretability for image understanding tasks.
 
+
+## 🔍Abstract
+
+Macular edema is a retinal disease that severely impairs vision, necessitating timely and accurate automated diagnosis for effective clinical treatment. However, its subtle manifestations in color fundus photography (CFP) images pose significant challenges for deep learning methods in modeling and analyzing pathological features. To address this issue, we propose a Graph Mapping Mamba Network (GMMN) that integrates Graph Convolutional Networks (GCNs) with Mamba to enhance feature modeling and improve diagnostic performance. GMMN leverages GCNs for feature encoding to capture local spatial correlations while utilizing Mamba to model long-range dependencies, thereby enhancing global feature representation. Compared with existing Mamba-based image processing methods, GMMN compensates for Mamba’s limitations in local feature modeling through GCNs and mitigates the redundancy caused by multi-directional scanning. Additionally, we introduce a mapping matrix to exploit geometric correspondences across branches, enabling efficient cross-layer feature fusion. Furthermore, to optimize the extraction of macular edema features, we design a multi-branch, multi-scale feature extraction method that leverages the spectral reflectance variations of macular edema at different wavelengths. This ensures that the extracted features align more closely with the pathological characteristics of the affected regions, providing more discriminative inputs for subsequent GMMN processing. Experimental results demonstrate that our proposed method outperforms existing approaches on the IDRiD, Messidor, and a proprietary clinical dataset, validating the potential of integrating GCNs and Mamba for medical image analysis.
 ## 🧠 Framework Overview
 
 <p align="center">
@@ -17,7 +21,7 @@ Moreover, both Mamba and GCN are inherently designed to process **1D sequential 
   <em>Figure: Overall architecture of the proposed GMMN framework combining Mamba and GCN for retinal image analysis.</em>
 </p>
 
-## <a name="installation"></a> :wrench: Installation
+## 🔧 Installation
 
 This codebase was tested with the following environment settings, though it may work with other compatible versions:
 
